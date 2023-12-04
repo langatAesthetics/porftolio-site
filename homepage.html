@@ -27,13 +27,65 @@
     <!--End of header-->
 
     <!--Main content section-->
-    <main>
-        helllo
-    </main>
-    <!--Start of footer section-->
-    <footer>
-        &copy;langatAesthetics. All Rights Reserved.
-    </footer>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="text-column">
+                <h1>Your Name</h1>
+                <p>Web Developer</p>
+                <a href="#portfolio" class="cta-button">View Portfolio</a>
+            </div>
+            <div class="image-column">
+                <img src="path/to/your/image.jpg" alt="Your Name's Image"> <!-- Replace with the path to your image -->
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Carousel Section -->
+    <section class="testimonial-carousel">
+        <div class="arrow-buttons">
+            <button onclick="prevTestimonial()">
+                <<</button>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="testimonial">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua."</p>
+                <p class="author">- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat."</p>
+                <p class="author">- Jane Smith</p>
+            </div>
+            <div class="testimonial">
+                <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur."</p>
+                <p class="author">- Alex Johnson</p>
+            </div>
+        </div>
+        <div class="arrow-buttons">
+            <button onclick="nextTestimonial()">>></button>
+        </div>
+    </section>
+    <!-- Two Columns Section -->
+    <section class="two-columns-section">
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>This is the content of the first column.</p>
+        </div>
+        <div class="column">
+            <img src="path/to/your/image.jpg" alt="Image Description"> <!-- Replace with the path to your image -->
+        </div>
+    </section>
+    <section class="two-columns-section">
+        <div class="column">
+          <img src="path/to/your/image.jpg" alt="Image Description"> <!-- Replace with the path to your image -->
+        </div>
+        <div class="column">
+          <h2>Column 2</h2>
+          <p>This is the content of the second column.</p>
+        </div>
+      </section>
+    <script src="main.js"></script>
 </body>
 
 </html>

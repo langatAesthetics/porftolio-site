@@ -51,8 +51,173 @@ body {
     text-decoration: none;
     color: black;
   }
-  footer {
-    border-top: 1px solid black;
-    text-align: center;
-    padding: 10px;
+/* Reset some default styles */
+body, h1, h2, p, a, img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color to the hero section */
+.hero {
+  background-color: #3498db; /* Set a background color for the hero section */
+  color: #fff; /* Set text color to white for better contrast */
+  text-align: center;
+  padding: 50px 20px; /* Add padding for better spacing */
+}
+
+/* Create a flex container for the columns */
+.hero-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  justify-content: center;
+}
+
+/* Style the text column */
+.text-column {
+  flex: 1; /* Take up 50% of the container */
+  max-width: 600px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Hover effect for the button */
+.cta-button:hover {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+/* Style the image column */
+.image-column {
+  flex: 1; /* Take up 50% of the container */
+  max-width: 600px;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px; /* Add a border radius for a rounded image */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .text-column, .image-column {
+    flex: 100%; /* Each column takes up 100% width on smaller screens */
+    max-width: 100%;
+    margin-bottom: 20px; /* Add some spacing between columns */
   }
+}
+/* Reset some default styles */
+body, h1, h2, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Testimonial Carousel Section */
+.testimonial-carousel {
+  text-align: center;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-buttons {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #3498db;
+}
+
+.carousel-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 60%; /* Adjust the width as needed */
+}
+
+.testimonial {
+  flex: 0 0 100%;
+  padding: 20px;
+  transition: transform 0.5s ease;
+}
+
+.author {
+  margin-top: 10px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .testimonial {
+    flex: 0 0 100%;
+  }
+}
+/* Two Columns Section */
+.two-columns-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 0 auto; /* Center the section */
+  max-width: 70%; /* Adjust the width of the section as needed */
+}
+
+.column {
+  flex: 0 0 48%; /* Adjust the width of columns as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.column p {
+  font-size: 1em;
+  color: #555;
+}
+
+.column img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .two-columns-section {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}
