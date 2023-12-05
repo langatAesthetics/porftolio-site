@@ -11,17 +11,20 @@
 
 <body>
     <!--Start of header section-->
-    <header>
-        <div class="logo-container">
-            <img src="images/Untitled design (4).png" width="30px" class="logo" alt="logo">
-            <div class="logo-text">langatAesthetics</div>
+    <header class="header">
+        <div class="logo">
+            <h1>langatAesthetics</h1>
         </div>
-        <div class="social-icons">
+        <nav class="navigation">
             <ul>
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+        </nav>
+        <div>
+            <button class="reach-out">Reach Out</button>
+            <button class="menu"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
     <!--End of header-->
@@ -42,8 +45,8 @@
     <!-- Testimonial Carousel Section -->
     <section class="testimonial-carousel">
         <div class="arrow-buttons">
-            <button onclick="prevTestimonial()">
-                <<</button>
+            <button>
+                << </button>
         </div>
         <div class="carousel-wrapper">
             <div class="testimonial">
@@ -63,7 +66,7 @@
             </div>
         </div>
         <div class="arrow-buttons">
-            <button onclick="nextTestimonial()">>></button>
+            <button>>></button>
         </div>
     </section>
     <!-- Two Columns Section -->
@@ -78,13 +81,13 @@
     </section>
     <section class="two-columns-section">
         <div class="column">
-          <img src="path/to/your/image.jpg" alt="Image Description"> <!-- Replace with the path to your image -->
+            <img src="path/to/your/image.jpg" alt="Image Description"> <!-- Replace with the path to your image -->
         </div>
         <div class="column">
-          <h2>Column 2</h2>
-          <p>This is the content of the second column.</p>
+            <h2>Column 2</h2>
+            <p>This is the content of the second column.</p>
         </div>
-      </section>
+    </section>
     <script src="main.js"></script>
 </body>
 
