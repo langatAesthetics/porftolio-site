@@ -232,3 +232,37 @@ button {
     margin-bottom: 20px;
   }
 }
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3498db;
+  padding: 15px;
+  color: #fff;
+}
+
+.copyright {
+  flex: 1;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon img {
+  width: 30px; /* Adjust the width of social icons as needed */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+}
